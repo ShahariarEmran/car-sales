@@ -1,0 +1,35 @@
+.add-service form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    /* margin: 50px; */
+    padding: 50px;
+    text-align: center;
+}
+.add-service form input{
+    width: 40%;
+    margin-bottom: 10px;
+}
+.add-service{
+    background-color: whitesmoke;
+    border-radius:20px ;
+}
+.add-service img{
+    width: 900px;
+}
+
+
+/* Make it responsive */
+@media only screen and (max-width:688px) {
+    .add-service{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+    .add-service{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

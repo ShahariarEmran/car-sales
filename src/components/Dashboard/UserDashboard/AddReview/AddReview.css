@@ -1,0 +1,23 @@
+.add-service form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-service form input, textarea{
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+
+/* Make it responsive */
+@media only screen and (max-width:688px) {
+    .review{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+    .review{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

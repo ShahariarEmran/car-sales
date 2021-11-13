@@ -1,0 +1,21 @@
+.car{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: solid 10px rgb(209, 210, 221);
+}
+
+.car img{
+    width: 100%;
+}
+
+/* Make it responsive */
+@media only screen and (max-width:688px) {
+    .car{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+    .car{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
