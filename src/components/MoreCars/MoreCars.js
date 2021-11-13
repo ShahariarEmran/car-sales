@@ -5,7 +5,7 @@ import './MoreCars.css'
 const MoreCars = () => {
     const [more, setMore] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://glacial-mountain-00988.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setMore(data));
     }, [])

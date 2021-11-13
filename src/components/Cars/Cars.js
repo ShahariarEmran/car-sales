@@ -5,7 +5,7 @@ import './Cars.css'
 const Cars = () => {
     const [cars, setCars] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://glacial-mountain-00988.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setCars(data.slice(0, 6)));
     }, [])

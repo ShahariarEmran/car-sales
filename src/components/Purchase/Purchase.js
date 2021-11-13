@@ -20,7 +20,7 @@ const Purchase = () => {
 
         console.log(data);
         
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://glacial-mountain-00988.herokuapp.com/orders', data)
          .then(res => {
              if(res.data.insertedId){
                  alert('Your Order Successfully');
@@ -30,7 +30,7 @@ const Purchase = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/service/${carId}`)
+        fetch(`https://glacial-mountain-00988.herokuapp.com/service/${carId}`)
             .then(res => res.json())
             .then(data => setCar(data));
     }, [])

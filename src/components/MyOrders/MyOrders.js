@@ -8,7 +8,7 @@ const MyOrders = () => {
     const [orders, setOrders] = useState([])
     console.log(orders)
     useEffect( () =>{
-        fetch(`http://localhost:5000/orders/${user?.email}`)
+        fetch(`https://glacial-mountain-00988.herokuapp.com/orders/${user?.email}`)
          .then(res=>res.json())
          .then(data => setOrders(data))
     }, [user]);
@@ -17,7 +17,7 @@ const MyOrders = () => {
 
     // handle delete
     const handleDelete = id => {
-        const url = `http://localhost:5000/services/${id}`;
+        const url = `https://glacial-mountain-00988.herokuapp.com/services/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

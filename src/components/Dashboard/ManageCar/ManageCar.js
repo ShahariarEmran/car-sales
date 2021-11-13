@@ -4,14 +4,14 @@ import './ManageCar.css'
 const ManageCar = () => {
     const [services, setServices] = useState([])
     useEffect( () =>{
-        fetch('http://localhost:5000/services')
+        fetch('https://glacial-mountain-00988.herokuapp.com/services')
          .then(res=>res.json())
          .then(data => setServices(data))
     }, []);
 
     const handleDelete = id => {
         console.log('batton clicked', id);
-        const url = `http://localhost:5000/delete-services/${id}`;
+        const url = `https://glacial-mountain-00988.herokuapp.com/delete-services/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
